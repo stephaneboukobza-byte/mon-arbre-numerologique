@@ -609,13 +609,10 @@ Dans ce cas :
 }
 
 DESC_DYNAMIQUE = {
-    1: "Dynamique 1 : Précurseur, énergie d’agir, leadership naturel L’ambiance qui entoure votre vie favorise un côté précurseur, une énergie d’agir, un leadership naturel.
-— En positif : globalement, l’atmosphère de votre vie vous incite à prendre des initiatives, à agir, à aller
-de l’avant, mais surtout à être un pionnier dans un domaine particulier : montrer la route. Elle facilite votre
-capacité d’autonomie, votre indépendance et votre aptitude à être un « chef d’orchestre ».
-— En négatif : cette ambiance peut favoriser votre nervosité, un côté autoritaire, égoïste, une attitude qui
-montre que vos intérêts l’emportent sur tout le reste.
-",
+    1: "Dynamique 1 : Précurseur, énergie d’agir, leadership naturel L’ambiance qui entoure votre vie favorise un côté précurseur, une énergie d’agir, un leadership naturel. 
+    En positif : globalement, l’atmosphère de votre vie vous incite à prendre des initiatives, à agir, à aller de l’avant, mais surtout à être un pionnier dans un domaine particulier : montrer la route. Elle facilite votre capacité d’autonomie, votre indépendance et votre aptitude à être un « chef d’orchestre ».
+    En négatif : cette ambiance peut favoriser votre nervosité, un côté autoritaire, égoïste, une attitude qui montre que vos intérêts l’emportent sur tout le reste.",
+    
     2: "Dynamique 2 : Accompagnateur, inspiration, surpassement
 L’ambiance qui entoure votre vie favorise un côté accompagnateur, de l’inspiration, du surpassement
 (11/2).
