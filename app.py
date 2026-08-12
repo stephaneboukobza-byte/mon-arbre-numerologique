@@ -19,19 +19,295 @@ def formater_cle(val):
 # ==========================================
 
 DESC_RACINES = {
-    1: "• **TALENTS :** L'autonomie et votre côté énergique. Que vous soyez employé ou à votre compte, la règle absolue est d'être autonome : agir, décider, organiser. C'est vital pour vous. Ce talent donne des aptitudes à diriger, commander, être pionnier. Votre énergie communicative sert à aller de l'avant et montrer le chemin.\n\n• **EXCÈS :** Égoïste, grand individualiste, égotique. Nerveux, impulsif, les mots dépassent votre pensée. Sensation d'être seul contre tous. Autoritaire, dur, intolérant... voire tyrannique.\n\n• **NON-ALIMENTÉ :** Vous subissez votre vie, spectateur. Difficulté à prendre votre vie en main, tendance à procrastiner, impatience. L'énergie non utilisée se traduit par des tensions internes et corporelles.",
-    2: "• **TALENTS :** L'accompagnement, côté maman. Fait pour collaborer, assister. Aime donner de l'aide et permettre de faire évoluer une situation. Vous préférez la place de numéro deux. Sens du contact, de l'accueil et de la réceptivité. Travail en binôme idéal.\n\n• **EXCÈS :** Pense que l'autre a plus de valeur. Manque de confiance, doute, influençable, complexé, indécis. Se fait exploiter, se laisse envahir par les émotions (crises de panique).\n\n• **NON-ALIMENTÉ :** S'isole, s'enferme, fuit le contact. Activité solitaire sans accompagnement. Sensation d'être inutile, angoisse, mal-être profond.",
-    3: "• **TALENTS :** L'expression, côté créateur. Fait pour s'exprimer (physiquement, verbalement, artistiquement) et créer des interactions. Apporte de la nouveauté. Les métiers d'expression sur le devant de la scène conviennent grâce à votre charisme.\n\n• **EXCÈS :** Immature, puéril, naïf. Capricieux, superficiel, m'as-tu-vu. Joueur au point de se mettre en danger.\n\n• **NON-ALIMENTÉ :** Communique peu, s'isole, non-dits. Tendance à tout commencer sans rien finir, dispersé. Le corps crée un éparpillement malgré vous.",
-    4: "• **TALENTS :** La persévérance, côté travailleur. Édifier solidement, avec courage et ténacité. S'appuie sur la méthode, l'organisation, la règle. Besoin de cadre et de sécurité dans l'activité et l'univers personnel.\n\n• **EXCÈS :** Cartésien à l'excès (ne croit que ce qu'il voit). Enfermé dans une prison de peurs. Rigide, routinier, pointilleux, maniaque, obtus et conservateur.\n\n• **NON-ALIMENTÉ :** Manque de sérieux, d'organisation, de stabilité. Insécurité affective ou professionnelle entraînant stress, blocages et tensions intenses.",
-    5: "• **TALENTS :** L'adaptation, côté indépendant. Fait pour le mouvement et la variété. Liberté d'action absolue. Esprit vif, besoin de bouger physiquement ou intellectuellement. Audacieux, conquérant et pionnier.\n\n• **EXCÈS :** Impulsif, agit avant de réfléchir. Perte de liberté par la dépendance (alcool, drogues, sexe). Instable, opportuniste, prise de risques inconsidérés.\n\n• **NON-ALIMENTÉ :** Crainte de l'inconnu, peur de bouger. S'enferme dans la routine. Sensation de manquer d'air, éparpillement, velléité, étourderie.",
-    6: "• **TALENTS :** Le sens des responsabilités, côté soignant. Apporter des solutions, de l'harmonie. Rendre les ambiances conviviales. Aptitudes pour le soin, le bien-être, la beauté. Doué pour prendre des responsabilités familiales ou sociales.\n\n• **EXCÈS :** Perfectionniste fuyant la critique. Jaloux, envieux. Persuadé d'incarner la perfection et de n'avoir jamais tort.\n\n• **NON-ALIMENTÉ :** Coléreux, belliqueux, provoque le conflit pour maîtriser ce qui échappe. Hésitant, refuse les responsabilités.",
-    7: "• **TALENTS :** La cérébralité, côté original. Différent, assume sa singularité. Cerveau très actif, besoin de tout comprendre. Dons pour apprendre, expertiser, transmettre et conseiller. Approche spirituelle de la vie.\n\n• **EXCÈS :** Solitaire, froid, hautain. Complexe de supériorité, prétentieux, marginal. Orgueil exigeant qui fait abandonner par crainte d'échouer.\n\n• **NON-ALIMENTÉ :** Pensée incessante car le cerveau crie famine. Manque de confiance, sentiment d'infériorité. Se sent exclu, rejeté, incompris.",
-    8: "• **TALENTS :** La combativité, côté bâtisseur. Grande énergie, architecte de projects. Ambition, sens du pouvoir et de la justice. S'accomplit en se réalisant matériellement ou en guérissant/reconstruisant l'humain.\n\n• **EXCÈS :** Dur, violent, dominateur, exploite les autres. Arriviste, malhonnête, procédurier. S'installe en victime perpétuelle ou comportement sadique.\n\n• **NON-ALIMENTÉ :** Sentiment d'illégitimité, de non-valeur. Frustration, injustice. Colère inconsciente générant de la violence envers soi ou autrui.",
-    9: "• **TALENTS :** L'ouverture, côté engagé. Fait pour les métiers à vision large, tournés vers l'humain, l'international ou un public. Idéaliste, rêve d'un monde meilleur. Sensibilité extrême et immense besoin de reconnaissance.\n\n• **EXCÈS :** Extrémiste, fanatique (tout ou rien). Utopiste sans sens concret. Dépendant pour fuir la réalité, sensation de se sacrifier, mythomanie.\n\n• **NON-ALIMENTÉ :** Peur des autres, intolérance. Cœur fermé, submergé par les émotions. Dans la lune, sans réalisme.",
-    "11/2": "• **TALENTS :** Intuition pure, superaccompagnant. Fait pour se surpasser, faire évoluer et grandir (les gens, concepts, nations). Travail en binôme. Inspiration profonde tournée vers le bien collectif.\n\n• **EXCÈS :** Trop exigeant, dur face à la faiblesse. Fusionnel, exclusif. Manipulateur usant de son intuition. Se sent invincible, tyrannique.\n\n• **NON-ALIMENTÉ :** Égocentré. Doutes écrasants, dévalorisation massive. Humeur cyclothymique et actions d'autodestruction.",
-    "22/4": "• **TALENTS :** Énergie la plus colossale, superbâtisseur. Intuition aiguë du monde. Capacités de construction majeures, obligation de se surpasser pour bâtir à très grande échelle pour la collectivité.\n\n• **EXCÈS :** Méprisant, utilisation de l'énergie pour détruire. Extrême dureté, manipulation, mégalomanie, tyrannie.\n\n• **NON-ALIMENTÉ :** Paralysé et emprisonné dans ses peurs immenses. Sensation de vide absolu. L'énergie refoulée mène à la déprime ou dépression sévère.",
-    "33/6": "• **TALENTS :** Super-soignant, guide exceptionnel. Aspirations collectives immenses pour guider, améliorer et pacifier.\n\n• **EXCÈS :** Attitude de gourou, utilisation des tiers pour son besoin de puissance.\n\n• **NON-ALIMENTÉ :** Fuit les responsabilités, totally paralysé par les tensions ou critiques."
+    1: """**Vos talents naturels et potentiels sont l’autonomie et votre côté énergique. Vous avez besoin d’être dans l’action.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous êtes fait pour être autonome. Que vous soyez employé ou à votre compte, marié ou célibataire, la règle absolue est d’être autonome, c’est-à-dire pouvoir agir, décider, vous organiser, pouvoir gérer votre emploi du temps ou la façon dont vous allez travailler. C’est vital pour vous. Si vous êtes sous les ordres d’une personne autoritariste, ou vivez avec une personne dominatrice ou stricte, qui vous enlève votre capacité à décider, qui vous enferme dans son « moule », ce sera difficile à supporter pour vous. Tout ce que vous faites, même si vous l’adorez, peut, de ce fait, perdre du sens ; prenez conscience de cela et évitez de rester dans une telle situation.
+Ce talent va donc vous donner des aptitudes à diriger, à commander un groupe, à être responsable d’une équipe (Yves Saint Laurent), d’un parti (Jacques Chirac), à travailler en profession libérale, à être intermittent du spectacle, commerçant, à être un « électron libre » dans une grosse structure, entrepreneur (Enzo Ferrari), agriculteur, directeur de structure, président d’une association, d’une communauté (Martin Luther King), ou encore sportif de compétition (Tiger Woods).
+Tous les métiers qui demandent autonomie et action vous conviennent. La grande énergie qui vous caractérise est généralement communicative et supérieure à la moyenne. Elle vous sert pour aller de l’avant, pour montrer le chemin, pour prendre des initiatives, pour favoriser votre côté pionnier, pour dépasser vos limites ou pour guider les gens vers un but.
+Au niveau affectif, vous ne supportez pas que l’on décide pour vous, sauf si cela vous arrange. Si votre clé 1 est assumée, c’est vous qui portez la culotte dans votre couple.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être égoïste, vous ne pensez qu’à vos intérêts : vous êtes un grand individualiste ;
+• vous pouvez être égotique : vous ne parlez que de vous et ramenez tout à votre personne ;
+• vous pouvez être nerveux, impulsif, les mots dépassent votre pensée ;
+• vous pouvez vous sentir seul contre tous : la Terre entière est contre vous ;
+• votre sens du commandement est tel que vous devenez autoritaire, dur, intolérant… voire tyrannique.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 1 si :**
+• vous subissez votre vie professionnelle ou personnelle, si vous êtes spectateur de votre vie ;
+• vous avez des difficultés à prendre votre vie en main, à vous décider ; si vous ne savez pas quelle direction prendre pour orienter votre vie ;
+• vous avez tendance à procrastiner (remettre au lendemain) ;
+• vous êtes énervé et impatient ;
+• vous ne prenez aucun leadership ;
+• vous subissez une autorité qui vous enlève de l’autonomie.
+
+Votre besoin d’agir, d’aller de l’avant n’est pas assouvi, de ce fait, votre énergie non utilisée sort comme elle peut… et se traduit par des réactions nerveuses, des tensions internes, une humeur irritable (votre corps parle pour vous !). Vous êtes réactif malgré vous. Alors cherchez à exprimer votre clé 1 en positif, pour aller mieux !""",
+
+    2: """**Vos talents naturels et potentiels sont l’accompagnement, votre côté maman. Vous avez besoin d’être en binôme.**
+
+Notez que le chemin de vie 2 n’existe pas, car il y a toujours un 11 inclus dans l’un des calculs (voir ci-après la racine 11). L’expression 2 est rarissime (nous n’avons pas d’exemple). Cela sous-entend que la personne a très peu de lettres dans ses prénoms et nom.
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous êtes fait pour accompagner, accueillir, apporter votre collaboration. Vous aimez donner de l’aide, assister, permettre de faire évoluer une situation : c’est vital pour vous.
+Si l’on vous demande de diriger, de commander, de prendre les rênes d’une situation, cela va vous mettre en inconfort total (sauf si vous avez du 1 ou du 11 par ailleurs), car vous préférez la place de numéro deux à celle de premier. De même, si vous êtes dans une activité solitaire, avec très peu ou pas de contact, cela sera difficile à vivre. Prenez conscience du fait que vous êtes comme une maman : vous aimez faire grandir, donner des outils pour permettre à l’autre d’être plus efficace.
+Quel que soit le métier que vous exercez, vous devez exprimer vos dons pour accompagner, assister (quelques exemples : secrétaire, agent, animateur, comptable, enseignant, interprète, éducateur, entraîneur) ou en aidant dans les domaines du développement personnel, des ressources humaines, du recrutement, des associations, ou en travaillant dans le monde de l’enfance…
+Regardez autour de vous, les gens viennent naturellement à vous pour se confier, pour trouver une solution : les autres reconnaissent peut-être mieux que vous vos talents.
+Vous avez du plaisir à travailler en binôme, à être à deux, soit en face à face (conseil, accompagnement), soit côte à côte (assistance). Car vous avez le sens de l’accueil, de la sensibilité, et de la réceptivité.
+Au niveau affectif, votre besoin de vivre en couple est important : cela vous apporte de l’équilibre et du bien-être. Certains vont même préférer vivre à deux en étant insatisfait de la relation, plutôt que seul.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pensez que l’autre a plus de valeur que vous, vos intérêts passent toujours en second ;
+• vous avez tellement peu d’ego que vous manquez de confiance en vous, doutez de vous, pensez ne pas être à la hauteur, vous êtes influençable, complexé, indécis ;
+• l’autre prend une telle place que vous vous faites exploiter, et vous ne vous souciez pas de votre bien-être ;
+• vous êtes sensible au point de vous laisser envahir par vos émotions ; cela génère des crises de panique, de la terreur et vous empêche d’agir.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 2 si :**
+• vous vous isolez, vous enfermez et refusez de voir du monde ; vous fuyez le contact ;
+• vous avez une activité technicienne, sans contact professionnel avec la moindre personne ; vous travaillez seul sans accompagner, ni assister ; vous vivez seul ;
+• l’autre ne vous intéresse pas, vous n’écoutez personne, vous êtes centré sur vous-même et vos besoins personnels ; le reste vous indiffère ;
+• vous avez tendance à « écraser » les autres, car vous ne les regardez pas.
+
+Votre besoin d’accompagner, d’aider, d’assister n’est pas assouvi, et de ce fait, vous ressentez de la solitude, un mal-être, la sensation d’être incompris, d’être mis à l’écart ; vous êtes angoissé. En fait, vous avez la sensation d’être inutile (votre corps parle pour vous !). Alors cherchez à exprimer votre clé 2 en positif, pour aller mieux !""",
+
+    3: """**Vos talents naturels et potentiels sont l’expression, votre côté créateur. Vous avez besoin d’apporter de la nouveauté.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous êtes fait pour l’expression et la création.
+Quel que soit votre métier, vous devez vous exprimer soit physiquement (sportif, artiste, activités manuelles), soit verbalement (communication, information, commerce, négoce, etc.), soit en créant (arts, concept, objets, image, etc.), soit en étant dans le relationnel (animation, réseau, etc.), soit encore en travaillant dans le monde de l’enfance. La règle absolue est de créer des interactions avec les autres, avec le monde. C’est vital pour vous.
+Prenez conscience de cela et évitez les activités trop répétitives ou qui vous rendent reclus.
+De plus, ce talent va vous donner des aptitudes pour créer, pour apporter de la nouveauté, un regard neuf. Vous pouvez apporter des idées innovantes (Simone Veil), une œuvre créatrice (Mozart, Victor Hugo, Salvador Dalí), créer un concept innovant (Bill Gates), une nouvelle action (Neil Armstrong), ou encore des constructions innovantes et ludiques (Walt Disney).
+Bien souvent, les métiers d’expression qui vous mettent sur le devant de la scène vous conviennent particulièrement (Alain Delon, John Wayne, Ronaldo, Céline Dion) grâce à votre charme ou à votre charisme.
+Au niveau affectif, vous avez besoin d’être entouré. Vous aimez l’humour, vous amuser. Vous avez besoin de plaire. Vous êtes un compagnon joyeux et agréable.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être immature, puéril, ou naïf dans vos relations personnelles comme professionnelles ; vous réagissez comme un enfant : vous boudez, vous êtes capricieux ;
+• vous pouvez être superficiel dans vos relations amicales/amoureuses ou dépensier : tout n’est qu’apparence et m’as-tu-vu ;
+• votre besoin de légèreté peut vous faire manquer de sérieux et de profondeur ;
+• vous avez tellement besoin d’être sur le devant de la scène, que vous êtes prêt à user de charme et de séduction pour y arriver ;
+• vous pouvez être joueur au point de vous mettre en danger, ainsi que votre entourage.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 3 si :**
+• vous communiquez peu ou pas, vous cultivez votre isolement ou les non-dits ; vous n’avez pas d’amis, pas de réseau ; vous n’êtes pas ouvert au partage, ni aux échanges… ;
+• vous avez une activité ou une vie où la création s’exprime peu ou pas, vous faites un métier répétitif ;
+• vous avez une activité solitaire dans laquelle vous ne vous exprimez pas.
+
+Votre besoin de créer, d’échanger, de communiquer n’est pas assouvi, et de ce fait, vous avez tendance à tout commencer sans rien finir, à être dissipé, bavard : votre corps exprime ce besoin en créant un éparpillement, une multitude d’activités, malgré vous (votre corps parle pour vous !). Alors cherchez à exprimer votre clé 3 en positif, pour aller mieux !""",
+
+    4: """**Vos talents naturels et potentiels sont votre persévérance, votre côté travailleur. Vous êtes un constructeur.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous êtes un travailleur-né.
+Ce qui vous motive est d’élaborer et d’édifier solidement une activité, un projet, en y mettant persévérance, courage, sérieux, constance et ténacité. Quel que soit votre métier, vous êtes un constructeur.
+Grâce à votre talent, tous les métiers vous conviennent à condition d’être rassuré sur votre capacité à le réaliser : pour cela, vous devez dépasser vos peurs en travaillant énormément, en étudiant, en vous formant, en vous faisant valider ou certifier par un expert, en utilisant un support.
+Bien souvent, vous aimez vous appuyer sur une méthode, une organisation, une règle, ou une technique. Toutes les activités nécessitant un des éléments ci-dessous, vous conviennent :
+• un travail acharné (Brad Pitt ; Justin Bieber, qui, enfant, apprend à jouer tout seul de la guitare, de la batterie, du piano et de la trompette, puis enregistre ses premières chansons à 13 ans) ;
+• une organisation, un procédé, par exemple : conseiller, expert, constructeur, architecte (Le Corbusier), ingénieur, chercheur (James Watson), organisateur, réparateur, gestionnaire, etc. ;
+• une discipline, un ordre (tâches administratives, contrôle, technicité, sécurité, protection, procédures, etc.).
+Vous avez besoin de cadre ou d’un sentiment de sécurité dans votre activité ou dans votre univers personnel. Vous aimez savoir où vous allez, quelles sont vos perspectives : ceci s’avère vital pour vous.
+Au niveau sentimental, vous avez besoin d’un engagement commun, vous supportez mal l’insécurité affective. On peut compter sur vous.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être tellement cartésien que vous ne croyez que ce que vous voyez ; vous manquez d’ouverture ; ce que vous ne voyez pas n’existe pas ;
+• vous pouvez avoir un tel besoin de sécurité et de cadre que vous vous enfermez dans une sorte de prison, à force de vous protéger de tout ; vos peurs ont pris le pouvoir sur votre capacité d’agir et de construire ; le « 4 » bloque l’expression des autres clés, car vous pouvez être inquiet, craintif ; vous vous limitez, vous freinez vos actions ;
+• vous pouvez être rigide, routinier, pointilleux, maniaque ;
+• vous pouvez être obtus, conservateur, intraitable.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 4 si :**
+• Vous travaillez peu ou pas, manquez de sérieux, d’organisation, de rigueur, de structure, de stabilité ; la constance et la régularité vous sont inconnues ;
+• votre activité professionnelle ou votre situation personnelle manque de sécurité : votre rémunération dépend uniquement d’une commission (elle est aléatoire), vous avez un contrat qui change tout le temps et vous ne maîtrisez rien, vous ne pouvez pas compter sur la personne avec qui vous vivez, vous ne savez pas quel est votre avenir, vous ne pouvez pas vous projeter, vous n’avez pas de perspective, vous êtes au chômage, etc.
+
+Votre besoin de sécurité, de cadre, d’organisation, de maîtrise n’est pas assouvi, de ce fait, vous vous bloquez dans des attitudes décalées, et ressentez de la peur, du stress, des tensions (votre corps parle pour vous !). Alors cherchez à exprimer votre clé 4 en positif afin d’aller mieux !""",
+
+    5: """**Vos talents naturels et potentiels sont l’adaptation, votre côté indépendant. Vous avez besoin de variété.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous êtes fait pour le mouvement et la variété. Le mot que vous aimez le plus est « liberté d’action ». Vous avez un esprit vif et curieux et ressentez le besoin de bouger physiquement (métier physique ou itinérant) ou intellectuellement (chercheur, créateur, inventeur, reporter, etc.) ou encore mentalement (idée, expérience ou pensée nouvelle). Vous mettre dans une case serait réducteur : tous les métiers peuvent vous convenir, à condition qu’ils ne soient pas répétitifs ou ne vous installent dans une routine, un train-train ; d’autant que votre particularité est votre grand sens de l’adaptation. Attention, cependant à ce que cette qualité ne se transforme pas en défaut : à force de vouloir vous adapter (caméléon), vous pourriez chercher à n’exprimer qu’une seule partie de vous-même en fonction de vos interlocuteurs et finir par en oublier d’être vous-même.
+Une clé 5 bien alimentée aime et recherche le changement, la nouveauté, la polyvalence, la diversité. Vous aimez vous sentir libre d’agir et indépendant (Brigitte Bardot). Vous avez beaucoup d’énergie et des prédispositions pour être réactif et flexible.
+Dès que vous vous ennuyez et que votre activité s’installe dans une habitude, vous devez provoquer le changement. Prenez-en conscience, c’est vital pour vous.
+Par ailleurs, vous avez des aptitudes pour innover, aller sur de nouveaux chemins (Louis Pasteur, Mark Zuckerberg), être audacieux et conquérant — dans le sens noble du terme — (Franklin D. Roosevelt, George Patton).
+Au niveau affectif, vous avez besoin de partager votre vie avec des gens toniques, qui aiment bouger, être actifs et vivre des expériences variées. Si vous vous ennuyez, vous pourriez être tenté d’aller voir ailleurs.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être impulsif, vous agissez et réfléchissez après ; vous ne vous souciez pas des conséquences de vos actes (Donald Trump) ;
+• à force d’excès, vous pouvez perdre votre liberté : vous affaiblissez votre libre arbitre en devenant dépendant (alcool, sexe, drogue, jeu, etc.) ;
+• vous pouvez vous mettre en danger et prendre des risques inconsidérés ; vous mettez votre entourage en difficulté ;
+• vous pouvez être opportuniste et ne penser qu’à assouvir vos plaisirs immédiats ; on ne peut pas réellement compter sur votre loyauté, votre fiabilité, votre engagement ;
+• votre besoin de liberté vous rend instable ;
+• vous pouvez être un conquérant permanent, dans le sens négatif du terme.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 5 si :**
+• vous craignez l’inconnu, toute situation nouvelle ; vous avez peur de bouger ou de voyager quand vous ne connaissez personne ; vous ne savez pas provoquer le changement ;
+• vous avez un métier répétitif, vous vous enfermez dans une routine et un confort relatif alors que vous savez que la situation ne vous convient plus et que vous vous ennuyez ;
+• vous ne vous intéressez à rien, vous manquez de curiosité, d’audace ; vous ne faites que des choses que vous connaissez et maîrisez ;
+• vous avez la sensation de manquer d’air.
+
+Votre besoin de changement d’attitude, de liberté, de mouvement, de variété n’est pas assouvi. De ce fait, vous avez tendance à être dispersé, éparpillé, velléitaire ou étourdi. Votre corps exprime à sa façon ce besoin en vous faisant aller dans tous les sens… (il parle pour vous !). Alors cherchez à exprimer votre clé 5 en positif, pour aller mieux !""",
+
+    6: """**Vos talents naturels et potentiels sont le sens des responsabilités, votre côté soignant. Vous avez besoin d’harmonie.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous êtes un soignant, vous cherchez à apporter l’harmonie.
+Quel que soit votre métier, vous avez besoin d’améliorer, d’apporter des solutions, de rendre l’ambiance, l’action, la personne, l’entreprise ou la mission que l’on vous a confiée plus harmonieuse. C’est vital pour vous. Vous aurez donc des aptitudes à exercer tous les métiers qui apportent de l’attention aux autres, aux structures ou aux projets, qui donnent de la beauté, du rêve, du bien-être, des améliorations. Quelques exemples : artistes (Édith Piaf, John Lennon, Michael Jackson, Leonardo DiCaprio), le monde médical (Christiaan Barnard), l’univers scientifique (Albert Einstein), le développement personnel (Eckhart Tolle).
+Par ailleurs, vous êtes doué pour prendre des responsabilités, pour guider, pour coacher (ce point est amplifié quand votre « 6 » vient du 33). Cela peut être dans le monde politique (le général de Gaulle, Abraham Lincoln, Winston Churchill), dans l’univers des idées et des mentalités (Matthieu Ricard), dans celui de l’entreprise, de l’environnement, de la finance, du sport, de l’associatif, ou juste au niveau familial.
+Si vous vivez ou travaillez dans une structure où l’ambiance est en permanence conflictuelle et si vous ne pouvez rien changer, n’y restez pas : il vous sera vite insupportable d’accepter de vivre cela. Vous haïssez les querelles.
+Si l’on vous demande d’exercer une activité que vous estimez contraire à vos valeurs (manipulation, malhonnête, etc.), sachez que cela vous mettra profondément mal à l’aise et créera en vous un puissant conflit intérieur.
+Au niveau affectif, vous avez hâte de vivre le grand amour, de créer votre cocon, de fonder une famille. Vous aimez les ambiances familiales et chaleureuses.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• quand on vous critique, vous pensez que l’on ne vous aime pas et vous vous mettez en rupture, vous fuyez ;
+• vous avez tendance à devenir jaloux ou envieux ;
+• vous pouvez vous aimer au point d’être persuadé de n’avoir jamais tort et de n’être responsable de rien ; vous pensez incarner la perfection ;
+• (si 33) vous pouvez être un « gourou » et vous servir de vos disciples pour assouvir vos ambitions et besoins de puissance.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 6 si :**
+• vous avez une activité qui vous oblige à mentir, à tromper, qui exploite, manipule les gens, détruit un environnement, une situation, etc. ;
+• vous êtes coléreux, belliqueux ; vous provoquez le conflit et les tensions pour maîtriser les situations qui vous échappent ;
+• vous manquez d’attention aux autres ou à vous-même ;
+• vous ne cherchez pas à améliorer, à concilier, à apporter de l’harmonie ;
+• vous n’osez pas prendre de responsabilités (familiales ou professionnelles) ;
+• vous ne savez pas choisir, vous êtes hésitant ou indécis.
+
+Votre besoin d’apporter du soin, de l’harmonie, d’améliorer, n’est pas assouvi, de ce fait, vous êtes envieux, coléreux, tendu, blessé : votre corps crée de la disharmonie pour attirer votre attention sur ce qui vous manque (votre corps parle pour vous !). Alors cherchez à exprimer votre clé 6 en positif, pour aller mieux !""",
+
+    7: """**Vos talents naturels et potentiels sont votre cérébralité, votre côté original. Vous avez besoin de transmettre.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Tout d’abord, votre premier talent est d’être original. Si cette clé 7 est alimentée, vous acceptez votre différence et assumez votre singularité ; vous la cultivez en ayant compris que c’est une chance. Vous savez que cela vous rend plus « riche » même si quand vous étiez jeune vous aviez la sensation d’être incompris (Jacques Brel) et peut-être même rejeté.
+Vous avez une « Ferrari » au niveau du cerveau ! Vous avez besoin de tout comprendre. Cela signifie que vous avez de belles aptitudes pour vous en servir au quotidien : apprendre, approfondir, enseigner, consulter, conseiller, faire de la recherche (Isaac Newton), philosopher, etc. Votre cerveau est tellement actif que vous avez la sensation de ne jamais débrancher ; à force de peser le pour et le contre, de chercher à tout analyser, cela peut parfois vous empêcher d’agir.
+Quel que soit votre métier, si vous utilisez quotidiennement votre intelligence par votre expertise, votre réflexion, votre analyse (John F. Kennedy), votre mémoire, votre écriture, votre capacité à étudier et surtout à transmettre (Yannick Noah), vous serez satisfait. En faisant cela, vous utilisez votre cerveau « gauche », le siège de l’apprentissage, de la logique, du raisonnement, de l’intelligence. Cependant, ce n’est pas suffisant. Il est aussi nécessaire d’utiliser votre cerveau « droit », siège de l’instinct, des intuitions et autres émotions : point plus difficile à cultiver dans notre monde occidental, car nous commençons seulement depuis peu à valoriser cette dimension. Si vous utilisez votre intuition, si vous travaillez sur le sens de votre vie et apprenez à mieux vous connaître, vous serez encore plus épanoui.
+Avoir une approche spirituelle de la vie signifie chercher, comprendre ce qu’être veut dire, se questionner sur le sens à donner à sa vie, pour s’inclure au mieux dans le monde. La méditation, les outils de développement personnel, la foi, les thérapies brèves ou longues, le sport, la philosophie, le bouddhisme, le yoga, etc., sont autant de méthodes pour y accéder.
+Vous avez tendance à la discrétion et aimez le goût du secret.
+Avoir un métier spirituel, c’est-à-dire utiliser votre cerveau droit et gauche au quotidien vous comble !
+Si vous êtes obnubilé par l’argent ou par la peur d’en manquer, vous vous rapprochez de l’avoir et vous éloignez de l’être : sachez que vous vous éloignez alors de vous-même.
+Au niveau affectif, il vous est conseillé de choisir votre partenaire en fonction de la qualité de vos échanges intellectuels et spirituels sinon, vous risqueriez de ressentir un certain vide autour de vous.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• votre attitude distante peut vous rendre solitaire, froid, hautain (Margaret Thatcher) ; vous n’aimez pas être au contact des autres ; certains peuvent même être misanthropes ;
+• vous pouvez développer un complexe de supériorité, voire être prétentieux, arrogant ou méprisant ;
+• vous pouvez vous enfermer dans une marginalité et devenir victime de cette attitude ;
+• vous pouvez être très orgueilleux : cela vous rend tellement exigeant envers vous-même que vous abandonnez vos projets par crainte d’échouer.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 7 si :**
+• vous n’êtes pas dans la transmission ; votre activité est uniquement manuelle et ne demande ni réflexion, ni analyse, ni expertise ;
+• vous manquez de confiance en vous, n’avez pas foi en vos capacités et êtes souvent en train de vous sous-estimer ; vous avez un sentiment d’infériorité (Marilyn Monroe) ;
+• vous vous sentez exclu, rejeté ; vous avez la sensation d’être incompris ou d’être le « vilain petit canard » de la portée ; vous n’assumez pas votre singularité ;
+• vous refusez toute forme d’apprentissage ou rejetez toute ouverture à la spiritualité ;
+• vous avez tendance à vous enfermer dans « votre caverne » et à ne pas savoir comment aller vers les autres ;
+• vous êtes avide d’argent et toute votre vie est orientée uniquement vers l’enrichissement personnel.
+
+Vos besoins de réflexion, d’analyse, de compréhension, de transmission, de spiritualité ne sont pas assouvis et de ce fait, vous pensez tout le temps (jour et nuit). Votre cerveau est en train de vous dire « j’ai faim ! ». Si votre cerveau ne s’arrête jamais, c’est qu’il n’est pas assez nourri… (Votre corps parle pour vous !) Au lieu de vous remplir de nourriture ou de boisson en excès, comprenez qu’il s’agit de nourriture d’un autre plan dont vous avez besoin. Alors cherchez à exprimer votre clé 7 en positif, pour aller mieux !""",
+
+    8: """**Vos talents naturels et potentiels sont votre combativité, votre côté bâtisseur. Vous avez besoin de réalisation.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous avez beaucoup d’énergie.
+Quel que soit votre métier, vous avez des dons de bâtisseur, « d’architecte » d’idées ou de projets. Cette énergie est à votre disposition pour vous aider à en donner aux autres : soit en construisant une œuvre (Pablo Picasso), soit matériellement (businessman), soit en vous réalisant avec ambition (Jesse Owens), soit encore en aidant les autres à se (re)construire psychologiquement (développement personnel, psychiatre ; par exemple : Boris Cyrulnik) ou solidement par l’application d’une règle (contrôle, loi, justice, ordre, certification, etc.).
+Certains ont une grande volonté qui leur donne le sens du combat pour une cause (Gamal Abdel Nasser, Nelson Mandela), ou du pouvoir (François Mitterrand, Emmanuel Macron), de la compétition (Sergueï Bubka, Rafael Nadal), ou encore le sens de la justice ou des affaires. Cela dépendra des autres nombres qui constituent leur triangle fondamental.
+La clé « 8 » étant associée à l’idée de justice, si vous êtes malhonnête dans votre vie pour vous permettre d’aller plus vite ou plus loin, soyez certain que vous aurez affaire tôt ou tard à la justice.
+Vous avez du talent pour vous réaliser et une clé 8 bien nourrie gagne très bien sa vie.
+Si, à cause de croyances, de blessures non cicatrisées, de sentiment d’illégitimité, de manque d’estime de vous, vous ne prenez pas la place que vous espérez occuper dans la société, vous allez ressentir de la frustration, de l’injustice et/ou de la violence. Cela va se traduire dans votre comportement qui va devenir violent ou injuste, envers les autres ou envers vous-même (blessure, accident du corps, de la route, etc.). Prenez une place juste, sans violence, en exprimant vos ressentis, en travaillant sur vous pour comprendre votre valeur et exprimer votre légitimité pour vous réaliser. Nous vous conseillons aussi, dès le plus jeune âge, de faire du sport ou de la méditation pour apprendre à libérer et/ou à canaliser ce trop-plein d’énergie !
+Au niveau affectif, vous êtes courageux, protecteur et l’on pourra compter sur vous. En cas de frustration, nous vous conseillons de faire attention à votre posture : êtes-vous une victime ou un bourreau ? Ou les deux suivant la situation ? Prenez conscience de deux points :
+• vous devez vous faire respecter sans recourir à la violence ;
+• les mots sont des armes qui peuvent faire très mal.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• au quotidien, vous pouvez être dur, violent ou dominateur ; vous exploitez les autres et fonctionnez par la rudesse ;
+• vous pouvez être arriviste, voire appliquer l’adage « La fin justifie les moyens » ; tous les moyens vous sont bons pour réussir : malhonnêteté, malversations, mensonges, manipulation, mauvaise foi, délits d’initié, etc. ; vous êtes procédurier, les combats, les conflits et la guerre vous nourrissent ;
+• vous pouvez vous installer dans un rôle perpétuel de victime pour surtout ne pas vous remettre en question et en faire le moins possible ; c’est la place que vous avez décidé, plus ou moins consciemment, de prendre ;
+• vous pouvez avoir un comportement masochiste ou sadique (bourreau) ;
+• vous pouvez avoir des problèmes avec la justice ou la loi (Bernard Tapie, François Fillon).
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 8 si :**
+• vous vous sentez illégitime à l’extérieur, ou au sein de votre famille et cela vous empêche de vous réaliser, de gagner votre vie, d’être considéré ; vous pensez que vous n’avez pas ou peu de valeur ; vous n’osez pas prendre votre place ;
+• vous ressentez de la frustration, de l’injustice, de la violence, car on ne vous reconnaît pas ; vous êtes victime du comportement d’un tiers et n’arrivez pas à vous faire respecter ;
+• vous êtes violent verbalement ou physiquement envers certaines personnes (ou envers vous- même) et n’arrivez pas à vous maîtriser ; vous « explosez » chaque fois que vous vous sentez attaqué.
+
+Votre besoin de construire, de vous réaliser, de prendre votre place n’est pas assouvi, et de ce fait, vous ressentez inconsciemment de la colère contre vous-même et cela vous rend violent, injuste envers vous- même ou les autres (votre corps parle pour vous !). Alors cherchez à exprimer votre clé 8 en positif, pour aller mieux !""",
+
+    9: """**Vos talents naturels et potentiels sont votre ouverture, votre côté engagé. Vous avez besoin de comprendre le monde.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Vous avez du talent pour vous ouvrir au monde ou à sa compréhension.
+Vous êtes fait pour tous les métiers qui demandent une vision large (Charles Lindbergh), ou qui se préoccupent de l’humain (Gandhi, Amma) ou de la planète (Jacques-Yves Cousteau), ou qui sont tournés vers l’international, ou encore vers une activité publique (Elvis Presley), ou vers tout ce qui brille.
+Que vous ayez une activité tournée vers les sciences de la Terre ou sa protection (géologie, vulcanologie, etc.), vers les sciences humaines (développement personnel, psychologie, ésotérisme, etc.), vers l’humanitaire, vers l’étranger (activité lucrative, scientifique ou philanthropique), vers un intérêt communautaire (association, administration publique, etc.), vers un public (artiste, politique, médias), vers le luxe ou le rêve (tout ce qui brille), votre atout majeur est votre capacité d’ouverture aux autres.
+Vous êtes généralement passionné ; vous aimez vous engager à fond dans ce que vous faites.
+Bien souvent idéaliste, vous rêvez d’un monde meilleur. Cela vous donne une attirance pour défendre une cause, une idée. Vous êtes sensible et très émotif.
+Votre besoin de reconnaissance est immense ; c’est pour cette raison que les métiers qui ont un public vous attirent à ce point.
+Au niveau affectif, certains d’entre vous vont préférer l’amour universel à l’amour charnel ; d’autres vont idéaliser la relation et risquent de manquer de réalisme. Apprenez à canaliser votre émotivité en vous passionnant pour une idée et vos relations intimes seront plus stables.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être extrémiste, jusqu’au-boutiste ou fanatique : il n’y a pas de juste milieu (Heinrich Himmler, Staline) ;
+• vous pouvez être nerveux, utopiste et manquer de réalisme et de sens concret ;
+• vous pouvez devenir dépendant pour échapper à une réalité ; vous pouvez vous « perdre » en allant chercher des sensations de joie artificielles (alcool, drogue, sexe, etc.) ;
+• vous pouvez avoir tellement besoin de reconnaissance que vous seriez prêt à tout pourvu que l’on vous remarque ;
+• vous pouvez vous sentir exploité et avoir la sensation de vous sacrifier.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 9 si :**
+• vous avez peur des autres, n’aimez pas la différence, les voyages vous inquiètent ;
+• vous manquez d’humanité ou êtes raciste ;
+• votre cœur est sec et fermé ;
+• vous êtes submergé par vos émotions, car trop centré sur vous ; vous manquez d’engagement, de passion ;
+• le monde et ses mystères ne vous intéressent pas : votre univers personnel est étroit ; vous n’avez pas l’esprit collectif ;
+• vous avez tendance à raconter des « histoires » : vous êtes mythomane.
+
+Votre besoin de découvrir le monde et les autres n’est pas nourri. De ce fait, vous êtes tout le temps dans la lune, vous rêvassez et êtes ailleurs, vous manquez de réalisme, votre émotionnel vous joue des tours. Vous voyagez dans votre tête pour compenser ce manque (votre corps parle pour vous !). Alors cherchez à exprimer votre clé 9 en positif, pour aller mieux !""",
+
+    11: """**Vos talents naturels et potentiels sont votre intuition et votre côté superaccompagnant. Vous avez besoin de vous surpasser.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+Grâce à votre intuition, vous avez la capacité de « ressentir » avec une grande acuité les gens, les situations, quand votre mental n’intervient pas inopinément, avec son lot de doutes.
+Prenez conscience que vous êtes un « surefficient du cerveau droit ». Le monde très cartésien et rationnel, tel qu’il a été construit par les cerveaux gauches, ne vous convient pas. En d’autres termes, l’école traditionnelle n’est pas adaptée à votre vision du monde. Courage ! Peut-être pourrez-vous changer les choses par la suite ?
+Car vous êtes un superaccompagnant, doué pour faire grandir les gens (Barack Obama), les idées, les entreprises (Jacques Séguéla), les concepts (Coco Chanel), pour faire évoluer les mentalités (Martin Luther King, Emma Watson), pour inventer, pour être inspiré (Mozart, Édith Piaf, Sean Connery), pour faire de la recherche, pour vous tourner vers l’ésotérisme, pour aider un collectif, une espèce en difficulté (Paul Watson). Vous avez vocation à vous surpasser pour le bien de la collectivité, de la communauté.
+Car l’immense énergie et l’intuition qui vous ont été données impliquent des « devoirs » envers les autres. Si vous vous en servez à des fins uniquement égoïstes, pour nourrir seulement vos intérêts personnels, vous subirez des échecs.
+Vous pouvez exercer tous les métiers, à partir du moment où vous accompagnez quelqu’un, une structure ou un projet, en essayant de vous surpasser au-delà de vos doutes. Cherchez à travailler en binôme (conseil-assistance ou collaboration), car 11 peut se réduire à 2. Par exemple : Céline Dion avec son manager/mari, René Angélil.
+Acceptez le fait d’avoir un moral qui monte et qui descend et apprenez à le lisser. Pour cela, cherchez à être « deux » et demandez de l’aide à un ami, un thérapeute, ou aidez quelqu’un qui ne va pas bien (comme vous êtes doué pour aider et accompagner les autres, votre estime de soi s’améliorera par le « retour » que l’on vous fera).
+Notez qu’il est impossible d’être tout le temps dans l’énergie de surpassement du 11. De ce fait, à ce moment-là, vous passez dans l’énergie 2 (1 + 1= 2). Nous vous conseillons alors de lire la racine 2, plus haut, qui vous concerne également.
+Au niveau affectif, vous pouvez avoir du mal à être compris à cause de vos humeurs instables ; mais votre intuition redoutable, si vous l’écoutez, vous fera aller vers la bonne personne.
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être trop exigeant, dur envers les autres, vous ne supportez pas la faiblesse des autres, ou les gens moins vifs que vous ;
+• vous pouvez être fusionnel, exclusif et empêcher l’autre de vivre loin de vous ;
+• vous pouvez vous servir de votre intuition pour manipuler les gens, servir uniquement vos intérêts personnels : vous oubliez alors le collectif et le projet à accompagner ;
+• vous pouvez vous sentir invincible et écraser ainsi ceux qui vous résistent ; vous pouvez être tyrannique (Adolf Hitler, Adolf Eichmann).
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 11 si :**
+• Vous êtes égocentré, vous ne vous tournez pas ou peu vers les autres : vous n’accompagnez pas, vous ne travaillez pas en binôme ; le collectif ne vous intéresse pas ;
+• vous doutez de vous, manquez de confiance en vous, pensez que vous n’y arriverez jamais ; vous vous dévalorisez et vous limitez ;
+• vous n’écoutez pas ou peu votre intuition : vous utilisez surtout votre mental (vos peurs et vos doutes) et ne cherchez pas à vous surpasser ;
+• vous vivez des humeurs changeantes, qui montent et qui descendent (parfois très bas) : vous êtes cyclothymique ; vous vous isolez et vous enfermez dans votre mal-être.
+
+Votre besoin de surpassement, de vous sentir utile aux autres n’est pas assouvi. De ce fait, vous avez des actes de surpassement négatif (troubles du comportement alimentaire, troubles du schéma corporel, troubles du comportement social, etc.). Alors cherchez à exprimer votre clé 11 en positif, pour aller mieux !""",
+
+    22: """**Vos talents naturels et potentiels sont votre intuition, votre côté superbâtisseur. Vous avez besoin de vous surpasser.**
+
+— **Vos talents lorsque vous alimentez votre racine :**
+De tous les nombres, c’est la clé 22 qui possède la plus grande énergie. Grâce à vos intuitions, vous avez la capacité de comprendre, de percevoir, d’appréhender le monde, les gens, les tendances, les situations… à condition de ne pas écouter votre mental, avec ses peurs et ses blocages !
+Ces deux atouts (énergie et intuition) réunis vous donnent des capacités importantes de construction et le besoin de chercher à vous surpasser, c’est-à-dire à dépasser vos peurs et à ne pas vous restreindre. Vous pouvez exercer tous les métiers à condition de chercher à apporter à la collectivité, à un groupe de personnes, à bâtir pour une communauté, à construire en étant concentré sur ce que vous souhaitez apporter aux autres. Prenez conscience que l’immense énergie et l’intuition qui vous ont été données impliquent ces « devoirs » envers les autres. Si vous vous en servez à des fins uniquement égoïstes, pour nourrir juste vos intérêts personnels, vous subirez des échecs (l’une des clés de Donald Trump ou de Nicolas Sarkozy est 22).
+Notez qu’il est impossible d’être tout le temps dans l’énergie de surpassement du 22. De ce fait, à ce moment-là, vous passez dans l’énergie 4 (2 + 2 = 4). Nous vous conseillons alors de lire la racine 4, plus haut, car dans ce cas-là, elle vous concerne.
+Le 22 vous rend potentiellement très productif et vous fait souvent utiliser une méthode, une expertise pour construire des objets à plus ou moins grande échelle (Bill Gates), pour inventer et innover (Marie Curie, Léonard de Vinci), pour créer des édifices (Francis Bouygues), pour faire évoluer les mentalités (dalaï-lama, Eckhart Tolle) et être inspiré (Frank Sinatra, par sa façon d’interpréter ses chansons, a comblé des millions de personnes). Il ne s’agit que de quelques exemples, car on ne peut restreindre le 22 : il a vocation à s’exprimer dans tous les domaines !
+Prenez conscience que vos peurs sont à la hauteur de votre potentiel. Puis travaillez avec régularité, constance et discipline, formez-vous, apprenez une méthode et vos peurs s’envoleront.
+Face à une déception, une blessure, une contrainte, une peur, si vous vous renfermez sur vous-même en parlant peu, en ne voyant personne, vous prenez le risque de réduire dangereusement votre « espace intérieur ». Cela pourrait entraîner une tendance à la déprime ou à la dépression. Les espaces mentaux étroits sont contraires à la grande ouverture du 22. Faites un effort pour vous impliquer dans la société, travaillez et forcez-vous à parler : vous retrouverez votre énergie !
+
+— **Vos attitudes possibles quand vous utilisez votre racine en excès :**
+• vous pouvez être méprisant envers tous ceux qui n’ont pas la chance d’avoir autant d’énergie que vous ;
+• vous pouvez utiliser votre grande énergie pour détruire ;
+• vous pouvez être d’une grande dureté, manipulateur, très autoritaire… voire tyrannique ou fou (rare) ;
+• vous pouvez ne penser qu’à vos intérêts ; vous servir de votre énergie et de votre intuition à des fins égoïstes ; oublier l’intérêt général ; votre réussite matérielle et vos ambitions (votre ego) l’emportent sur l’intérêt collectif ; le projet passe en second ;
+• vous avez la folie des grandeurs, vous êtes mégalomane.
+
+— **Vous n’avez pas encore compris vos talents, vous n’alimentez pas votre racine 22 si :**
+• vous vous emprisonnez dans vos peurs, vous vous bloquez et vous paralysez ;
+• vous vous limitez en vous enfermant dans une routine, privilégiez votre besoin de sécurité et refusez les projets plus importants, plus collectifs ;
+• vous n’écoutez pas ou peu votre intuition : vous utilisez surtout votre mental (vos peurs et vos doutes) ;
+• vous avez la sensation de ne servir à rien, d’avoir beaucoup de vide en vous ;
+• vous vous surpassez trop dans une activité autre que professionnelle, quitte à vous faire mal pour essayer de trouver la sensation de dépassement dont vous avez besoin.
+
+Votre besoin de construire en vous surpassant n’est pas assouvi et de ce fait, vous utilisez cette grande énergie pour vous bloquer de l’intérieur, au risque d’imploser… Vous vous recroquevillez sur vous-même, ne parlez à personne, vous broyez du noir, vous déprimez, vous pouvez même tomber en dépression. Votre corps parle pour vous ! Alors cherchez à exprimer votre clé 22 en positif."""
 }
+
+# Assigner la même description à 33 que la racine 6 telle que fournie dans la source
+DESC_RACINES[33] = DESC_RACINES[6]
 
 DESC_TRONC = {
     1: """**Catégorie des leaders et/ou des précurseurs**
@@ -204,7 +480,7 @@ Avez-vous le sentiment de ne pas vous intéresser au monde ?
 Si vous répondez oui à l’une de ces questions, ne soyez plus étonné de votre nervosité, ou de cet émotionnel qui s’emballe, ou encore de ce sentiment d’inutilité. Vous n’alimentez pas l’énergie 9 de votre tronc. Si vous êtes de nature rêveuse, dans la lune, c’est parce que vous voyagez dans votre tête au lieu de chercher à découvrir le monde et l’être humain. Écoutez votre sensibilité et vos émotions pour vous engager dans la défense d’une cause, d’une idée, d’une communauté ; ou pour comprendre le monde et l’être humain ; ou encore pour exprimer vos talents et les partager avec le plus grand nombre. Vous êtes doué pour cela, c’est votre nature !
 — **Vos défauts majeurs si votre énergie 9 s’exprime en négatif :** vous êtes rêveur et peu concret, fanatique, émotif, ce qui vous handicape, vous vivez dans une réalité fantasmée (mythomanie), vous êtes nerveux, dépendant à quelque chose (alcool, drogue, etc.).""",
 
-    "11/2": """**Catégorie des superaccompagnateurs, des inspirés**
+    11: """**Catégorie des superaccompagnateurs, des inspirés**
 — **Description :**
 Vous êtes doté d’une grande intuition… à condition que vous l’écoutiez ! Vos puissantes antennes vous permettent de sentir le monde, les gens et les situations avec beaucoup de finesse.
 Votre objectif consiste à vous surpasser, car l’énergie que vous avez est un « booster » personnel qui vous permet d’aider et d’accompagner les autres, de faire évoluer et grandir les tiers, les projets, les structures, les situations, voire les nations (Sigmund Freud, né le 6/05 ; Nicolas Sarkozy, né le 28/01 ; François Hollande, né le 12/08).
@@ -217,13 +493,13 @@ Vous pouvez exprimer l’énergie 11 en exerçant :
 • tous les métiers tournés vers le collectif (Jimmy Carter, né le 1/10).
 — **Quid de votre vie professionnelle ?**
 Avez-vous la sensation de ne pas accompagner les tiers, de ne pas les aider à évoluer ?
-Exercez-vous un métier où vous êtes tout seul, totally livré à vous-même ou sans aucun contact ?
+Exercez-vous un métier où vous êtes tout seul, totalement livré à vous-même ou sans aucun contact ?
 Avez-vous la sensation de régresser, de ne plus avancer, de ne servir à rien ?
 Si vous répondez oui à l’une de ces questions, ne soyez plus étonné de douter autant, de penser que vous êtes inutile, incapable : vous n’alimentez pas votre énergie 11.
 Si vous avez tendance à vous dévaloriser, si vous êtes de nature autodestructrice (toute action personnelle qui joue contre vous : troubles du comportement alimentaire, troubles du schéma corporel, troubles du comportement social, etc.), cela s’explique : vos doutes sont à la mesure de votre puissance. Quand vous n’utilisez pas vos dons, vous avez la sensation de ne servir à rien. Acceptez de demander de l’aide à un professionnel (coach, thérapeute) ou un ami ou, à l’inverse, apportez de l’aide à quelqu’un : vous êtes tellement doué pour cela, qu’en le faisant, votre estime de soi augmentera ! Travaillez en binôme : en ayant une personne de confiance à vos côtés, en aidant ou en assistant quelqu’un. Dès que vous vous autoriserez à vous engager dans des actions d’accompagnement pour permettre aux autres d’évoluer et de grandir, vous irez mieux !
 — **Vos défauts majeurs si votre nombre 11 s’exprime en négatif :** vous êtes tyrannique, manipulateur, avez de nombreux doutes, des capacités d’autodestruction ou d’autodévaluation, car vous n’utilisez pas vos dons (énergie et intuitions) sauf à des fins personnelles.""",
 
-    "22/4": """**Catégorie des superconstructeurs**
+    22: """**Catégorie des superconstructeurs**
 — **Description :**
 Vous êtes doté d’une immense énergie (la plus forte de tous les nombres !) et d’une grande intuition… à condition que vous l’écoutiez !
 Vous ressentez le monde, les gens, les situations, les projets, avec beaucoup d’acuité.
@@ -305,7 +581,7 @@ DESC_FEUILLES = {
 
 DESC_FRUITS = {
     1: "😊 **Vos qualités si vous utilisez votre nombre 1 en positif :**\nPionnier, avant-gardiste, leadership reconnu, vous aimez arriver en tête.\n\n🙁 **Vos défauts si vous exprimez votre nombre 1 en négatif :**\nÉgocentré, autoritaire, vous vous enlisez par manque total d'initiative.",
-    2: "😊 **Vos qualités si vous utilisez votre nombre 2 en positif :**\nSecond précieux, vous faites grandir les projects en binôme discret et collaboratif.\n\n🙁 **Vos défauts si vous exprimez votre nombre 2 en négatif :**\nDoute chronique de votre valeur, sous-estimation systématique de vos capacités.",
+    2: "😊 **Vos qualités si vous utilisez votre nombre 2 en positif :**\nSecond précieux, vous faites grandir les projets en binôme discret et collaboratif.\n\n🙁 **Vos défauts si vous exprimez votre nombre 2 en négatif :**\nDoute chronique de votre valeur, sous-estimation systématique de vos capacités.",
     3: "😊 **Vos qualités si vous utilisez votre nombre 3 en positif :**\nCréateur de liens, de concepts, d'art, vous possédez un dynamisme public exceptionnel.\n\n🙁 **Vos défauts si vous exprimez votre nombre 3 en négatif :**\nÉparpillement professionnel, manque cruel de profondeur et de sérieux dans vos tâches.",
     4: "😊 **Vos qualités si vous utilisez votre nombre 4 en positif :**\nMéthodique, rigoureux, vous posez des fondations inébranlables pour la réussite.\n\n🙁 **Vos défauts si vous exprimez votre nombre 4 en négatif :**\nCadre étriqué, maniaquerie stérile, peur paralysante du risque professionnel.",
     5: "😊 **Vos qualités si vous utilisez votre nombre 5 en positif :**\nInnovateur agile, vous adorez les grands changements, décodez de nouveaux défis.\n\n🙁 **Vos défauts si vous exprimez votre nombre 5 en négatif :**\nAttitude velléitaire, vous commencez tout sans jamais rien structurer ni terminer.",
@@ -313,9 +589,7 @@ DESC_FRUITS = {
     7: "😊 **Vos qualités si vous utilisez votre nombre 7 en positif :**\nExpert original, vous transmettez votre savoir, vos analyses et votre singularité.\n\n🙁 **Vos défauts si vous exprimez votre nombre 7 en négatif :**\nVous vous sentez incompris, rejeté ou vous vous isolez volontairement de votre marché.",
     8: "😊 **Vos qualités si vous utilisez votre nombre 8 en positif :**\nBâtisseur puissant, vous réussissez matériellement ou guérissez profondément les âmes.\n\n🙁 **Vos défauts si vous exprimez votre nombre 8 en négatif :**\nFrustration, sentiment d'injustice, tendance à la malhonnêteté ou au statut de victime.",
     9: """😊 **Vos qualités si vous utilisez votre nombre 9 en positif :**
-Dans vos réalisations, vous êtes tourné vers le monde, au sens large.
-Vous pouvez être passionné et engagé dans une cause.
-Vous pouvez aussi exprimer votre ouverture et votre sensibilité en travaillant pour le service public ou une dimension collective, ou en vous tournant vers les sciences humaines et universelles.
+Dans vos réalisations, vous êtes tourné vers le monde, au sens large. Vous pouvez être passionné et engagé dans une cause. Vous pouvez aussi exprimer votre ouverture et votre sensibilité en travaillant pour le service public ou une dimension collective, ou en vous tournant vers les sciences humaines et universelles.
 Il est possible que vous soyez attiré par tout ce qui touche aux voyages, à la découverte de l’étrange ou de l’étranger, en travaillant à l’international.
 Vous pouvez également travailler dans le domaine du luxe, du rêve, tout ce qui brille.
 Enfin, par vos talents ou votre engagement, vous vous inscrivez parfois dans la vie publique.
@@ -325,15 +599,13 @@ Le fruit de valeur 9 peut favoriser la reconnaissance si :
 • vous écoutez votre sensibilité, vos émotions.
 
 🙁 **Vos défauts si vous exprimez votre nombre 9 en négatif :**
-Votre côté utopiste vous fait rêver à un monde meilleur et vous rend peu réaliste.
-Votre émotivité vous submerge, vous rend nerveux ou inactif, cela vous empêche d’exercer votre métier avec sérénité.
-Votre besoin de reconnaissance professionnelle est tel que cela peut vous rendre agressif, voire fanatique ou dépendant.
+Votre côté utopiste vous fait rêver à un monde meilleur et vous rend peu réaliste. Votre émotivité vous submerge, vous rend nerveux ou inactif, cela vous empêche d’exercer votre métier avec sérénité. Votre besoin de reconnaissance professionnelle est tel que cela peut vous rendre agressif, voire fanatique ou dépendant.
 Dans ce cas :
 • Vous oubliez que la reconnaissance ou la notoriété est le résultat de vos actions. Restez concentré sur vos motivations et continuez à vous engager dans vos actions.
 • Apprenez à découvrir le monde, à voyager, à agrandir vos centres d’intérêt, à vous impliquer collectivement. Le monde a besoin de votre sensibilité, de votre engagement, de votre vision.
 • Osez vous tourner vers la psychologie, la philosophie, les sciences humaines, l’ésotérisme, vous avez des prédispositions pour cela.""",
     11: "😊 **Vos qualités si vous utilisez votre nombre 11 en positif :**\nSurpassement intuitif rare pour faire évoluer collectivement des structures ou personnes.\n\n🙁 **Vos défauts si vous exprimez votre nombre 11 en négatif :**\nDoutes intérieurs destructeurs, dévalorisation personnelle constante et freinante.",
-    22: "😊 **Vos qualités si vous utilisez votre nombre 22 en positif :**\nVous bâtissez des réalisations majeures et colossales pour la collectivité.\n\n🙁 **Vos défauts si vous exprimez votre nombre 22 en négatif :**\nPeurs totally bloquantes, folie des grandeurs (mégalomanie) ou repli dépressif."
+    22: "😊 **Vos qualités si vous utilisez votre nombre 22 en positif :**\nVous bâtissez des réalisations majeures et colossales pour la collectivité.\n\n🙁 **Vos défauts si vous exprimez votre nombre 22 en négatif :**\nPeurs totalement bloquantes, folie des grandeurs (mégalomanie) ou repli dépressif."
 }
 
 DESC_DYNAMIQUE = {
@@ -345,14 +617,7 @@ DESC_DYNAMIQUE = {
     6: "Dynamique 6 : L'atmosphère de votre vie favorise le soin et les responsabilités.",
     7: "Dynamique 7 : L'atmosphère de votre vie favorise la cérébralité et l'expertise.",
     8: "Dynamique 8 : L'atmosphère de votre vie favorise la réalisation et la puissance.",
-    9: """**Côté international ou humain, esprit collectif**
-L’ambiance qui entoure votre vie favorise un côté international ou humain, privilégiant un esprit collectif.
-
-😊 **En positif :** globalement, l’atmosphère de votre vie favorise les voyages, votre aptitude à vous intéresser au monde, au genre humain, à œuvrer pour une cause, à effectuer des actions publiques ou pour la communauté. En fonction de ce que vous avez accompli, elle facilite la reconnaissance, voire la notoriété.
-
-🙁 **En négatif :** cette ambiance peut entraîner un certain manque de réalisme, une forte émotivité ou nervosité. De même, elle peut engendrer un besoin de « voyager artificiellement » : alcool, drogue, etc., parfois jusqu’à en devenir dépendant.
-
-*Exemple : Elvis Presley (Elvis Aaron Presley), né le 8/01/1935, eut une influence mondiale et considérable sur la culture musicale. Il vendit sept cent millions de disques de son vivant, et le chiffre d’un milliard est à présent évoqué, faisant de lui l’artiste solo ayant vendu le plus de disques au monde. Il donna près de mille deux cents concerts aux États-Unis. Également acteur, il fut à l’affiche de trente-trois films. Il était aussi connu pour son addiction aux médicaments.*"""
+    9: "Dynamique 9 : L'atmosphère de votre vie favorise l'ouverture mondiale et collective."
 }
 
 DESC_DEFIS = {
