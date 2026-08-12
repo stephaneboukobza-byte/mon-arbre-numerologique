@@ -609,15 +609,95 @@ Dans ce cas :
 }
 
 DESC_DYNAMIQUE = {
-    1: "Dynamique 1 : L'atmosphère de votre vie favorise l'action, l'indépendance et le leadership.",
-    2: "Dynamique 2 : L'atmosphère de votre vie favorise l'accompagnement et le binôme.",
-    3: "Dynamique 3 : L'atmosphère de votre vie favorise la création et la communication.",
-    4: "Dynamique 4 : L'atmosphère de votre vie favorise la construction et la méthode.",
-    5: "Dynamique 5 : L'atmosphère de votre vie favorise l'innovation et l'adaptabilité.",
-    6: "Dynamique 6 : L'atmosphère de votre vie favorise le soin et les responsabilités.",
-    7: "Dynamique 7 : L'atmosphère de votre vie favorise la cérébralité et l'expertise.",
-    8: "Dynamique 8 : L'atmosphère de votre vie favorise la réalisation et la puissance.",
-    9: "Dynamique 9 : L'atmosphère de votre vie favorise l'ouverture mondiale et collective."
+    1: "Dynamique 1 : Précurseur, énergie d’agir, leadership naturel
+L’ambiance qui entoure votre vie favorise un côté précurseur, une énergie d’agir, un leadership naturel.
+— En positif : globalement, l’atmosphère de votre vie vous incite à prendre des initiatives, à agir, à aller
+de l’avant, mais surtout à être un pionnier dans un domaine particulier : montrer la route. Elle facilite votre
+capacité d’autonomie, votre indépendance et votre aptitude à être un « chef d’orchestre ».
+— En négatif : cette ambiance peut favoriser votre nervosité, un côté autoritaire, égoïste, une attitude qui
+montre que vos intérêts l’emportent sur tout le reste.
+Martin Luther King (né Michael King, Martin Luther King étant le nom qu’il avait choisi en tant que
+pasteur) est né le 15/01/1929. Ce grand leader militant non violent pour les droits civiques des Noirs aux
+États-Unis pour la paix et contre la pauvreté prononça un discours célèbre en 1963, « I have a dream ».
+L’année suivante, il devint le plus jeune lauréat du prix Nobel de la paix.",
+    2: "Dynamique 2 : Accompagnateur, inspiration, surpassement
+L’ambiance qui entoure votre vie favorise un côté accompagnateur, de l’inspiration, du surpassement
+(11/2).
+— En positif : globalement, l’atmosphère de votre vie favorise votre aptitude à accompagner, à faire
+évoluer. Elle facilite votre capacité à travailler en binôme (ou en face à face) ou en collaboration. Le 11
+apporte, en plus, une atmosphère qui privilégie l’inspiration, le surpassement, la créativité pour le bien
+collectif.
+— En négatif : cette ambiance peut favoriser vos doutes, votre indécision, votre manque de confiance. Le
+11 peut apporter, en plus, le côté autodévaluation, tyrannique, ou autodestructeur.
+Coco Chanel (Gabrielle Bonheur Chasnel), née le 19/08/1883, grande couturière française célèbre pour
+ses créations de haute couture, ainsi que les parfums portant son nom, est à l’origine de la Maison
+Chanel, « symbole de l’élégance française ».
+",
+    3: "Dynamique 3 : Créativité, expression orale, physique ou commerciale
+L’ambiance qui entoure votre vie favorise un côté créateur, l’expression orale, physique ou commerciale.
+— En positif : globalement, l’atmosphère de votre vie favorise principalement la faculté de créer, de
+communiquer, de commercer, de mettre en relation. Elle facilite tous les modes d’expression : physique,
+artistique, orale, créative. De même, elle contribue aux échanges et au partage.
+— En négatif : cette ambiance peut favoriser un côté immature, naïf ou superficiel et dépensier. De
+même, elle encourage votre tendance à l’éparpillement.
+",
+    4: "Dynamique 4 : Constructeur consciencieux, surpassement
+L’ambiance qui entoure votre vie favorise un côté constructeur consciencieux et le surpassement.
+— En positif : globalement, l’atmosphère de votre vie favorise la construction pierre après pierre de vos
+objectifs, parfois avec lenteur, mais toujours avec solidité et vaillance. Elle facilite votre côté sérieux,
+travailleur, organisé. Le 22 apporte, en plus, une atmosphère qui privilégie la construction à grande
+échelle dans une dimension collective et de surpassement.
+— En négatif : cette ambiance peut entraîner des blocages, des limitations, des peurs, la recherche de
+sécurité en toute action. Le 22 apporte, en plus, le côté déprimé, dépressif ou tyrannique.
+",
+    5: "Dynamique 5 : Innovation, audace, adaptabilité
+L’ambiance qui entoure votre vie favorise un côté innovant, de l’audace, de l’adaptabilité.
+— En positif : globalement, l’atmosphère de votre vie favorise votre aptitude à innover, à évoluer, à aller
+sur de nouveaux chemins. Elle facilite votre capacité de conquête, d’adaptation, à sortir du « cadre » pour
+inventer. Elle permet le développement de votre audace : votre liberté d’être.
+— En négatif : cette ambiance peut favoriser l’impulsivité, les excès, l’imprudence, le manque de
+réflexion. De même, elle peut développer une tendance à l’éparpillement ou à la velléité.",
+    6: "Dynamique 6 : Soignant, sens de l’amélioration, des responsabilités
+L’ambiance qui entoure votre vie favorise un côté soignant, le sens de l’amélioration, des responsabilités.
+— En positif : globalement, l’atmosphère de votre vie favorise votre aptitude à soigner au sens large, à
+apporter des solutions, à améliorer, à rendre plus harmonieux, à concilier, à pacifier. De plus, elle facilite
+votre capacité à avoir des responsabilités familiales, communales, entrepreneuriales, nationales ou
+internationales.
+— En négatif : cette ambiance peut favoriser l’indécision, le refus de responsabilité, le conflit intérieur
+comme extérieur. De même, elle peut engendrer un côté coléreux.
+",
+    7: "Dynamique 7 : Originalité, cérébralité, spiritualité
+L’ambiance qui entoure votre vie favorise un côté original, la cérébralité (apprentissage, transmission,
+etc.), la spiritualité, etc.
+— En positif : globalement, l’atmosphère de votre vie favorise la soif d’apprendre, de vous cultiver, de
+vous former, ainsi que la capacité à transmettre, à conseiller, à apporter votre analyse, votre réflexion ou
+votre expertise. Elle facilite une quête spirituelle et l’expression de votre originalité. Elle contribue à une
+vie intérieure intense.
+— En négatif : cette ambiance peut entraîner l’expression de sentiments d’infériorité ou de supériorité. De
+même, elle peut engendrer le besoin d’isolement jusqu’à parfois entraîner le développement d’un côté
+asocial.
+",
+    8: "Dynamique 8 : Architecte, réalisation personnelle ou collective
+L’ambiance qui entoure votre vie favorise un côté architecte, la capacité de réalisation personnelle ou
+collective.
+— En positif : globalement, l’atmosphère de votre vie favorise votre aptitude à vous réaliser
+matériellement, et/ou socialement, et/ou physiquement ou de permettre aux autres de le faire. De plus,
+elle facilite votre capacité à construire des projets personnels ou collectifs ambitieux, tel un « architecte
+de vie ».
+— En négatif : cette ambiance peut alimenter des sentiments de frustration et d’injustice. De même, elle
+peut engendrer une tendance à développer de la violence envers vous-même (accident, burn-out, …), la
+violence verbale ou physique envers les autres ou un côté victime.
+",
+    9: "Dynamique 9 : Côté international ou humain, esprit collectif
+L’ambiance qui entoure votre vie favorise un côté international ou humain, privilégiant un esprit collectif.
+— En positif : globalement, l’atmosphère de votre vie favorise les voyages, votre aptitude à vous
+intéresser au monde, au genre humain, à œuvrer pour une cause, à effectuer des actions publiques ou
+pour la communauté. En fonction de ce que vous avez accompli, elle facilite la reconnaissance, voire la
+notoriété.
+— En négatif : cette ambiance peut entraîner un certain manque de réalisme, une forte émotivité ou
+nervosité. De même, elle peut engendrer un besoin de « voyager artificiellement » : alcool, drogue, etc.,
+parfois jusqu’à en devenir dépendant.
+"
 }
 
 DESC_DEFIS = {
