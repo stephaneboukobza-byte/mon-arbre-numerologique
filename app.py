@@ -609,17 +609,13 @@ Dans ce cas :
 }
 
 DESC_DYNAMIQUE = {
-    1: "Dynamique 1 : Précurseur, énergie d’agir, leadership naturel
-L’ambiance qui entoure votre vie favorise un côté précurseur, une énergie d’agir, un leadership naturel.
+    1: "Dynamique 1 : Précurseur, énergie d’agir, leadership naturel L’ambiance qui entoure votre vie favorise un côté précurseur, une énergie d’agir, un leadership naturel.
 — En positif : globalement, l’atmosphère de votre vie vous incite à prendre des initiatives, à agir, à aller
 de l’avant, mais surtout à être un pionnier dans un domaine particulier : montrer la route. Elle facilite votre
 capacité d’autonomie, votre indépendance et votre aptitude à être un « chef d’orchestre ».
 — En négatif : cette ambiance peut favoriser votre nervosité, un côté autoritaire, égoïste, une attitude qui
 montre que vos intérêts l’emportent sur tout le reste.
-Martin Luther King (né Michael King, Martin Luther King étant le nom qu’il avait choisi en tant que
-pasteur) est né le 15/01/1929. Ce grand leader militant non violent pour les droits civiques des Noirs aux
-États-Unis pour la paix et contre la pauvreté prononça un discours célèbre en 1963, « I have a dream ».
-L’année suivante, il devint le plus jeune lauréat du prix Nobel de la paix.",
+",
     2: "Dynamique 2 : Accompagnateur, inspiration, surpassement
 L’ambiance qui entoure votre vie favorise un côté accompagnateur, de l’inspiration, du surpassement
 (11/2).
